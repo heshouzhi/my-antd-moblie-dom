@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'dva';
 import WorkStep from '../components/workSteps';
+import styles from './IndexPage.css';
 
 class Dom extends React.Component {
   render() {
     return (
-      <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+      <div className={styles.combined_wrapper}>
         <WorkStep dispatch={this.props.dispatch} />
       </div>
     );

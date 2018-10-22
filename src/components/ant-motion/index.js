@@ -102,9 +102,7 @@ class Demo extends React.Component {
               delay={2200}
               interval={30}
             >
-              EveryThing&nbsp;&nbsp;Is&nbsp;&nbsp;Possible,&nbsp;&nbsp;
-              If&nbsp;&nbsp;You&nbsp;&nbsp;Put&nbsp;&nbsp;Your&nbsp;&nbsp;
-              Heart&nbsp;&nbsp;Into&nbsp;&nbsp;It
+              EveryThing-Is-Possible,-If-You-Put-Your-Heart-Into-It
             </Texty>
           </div>
         )}
