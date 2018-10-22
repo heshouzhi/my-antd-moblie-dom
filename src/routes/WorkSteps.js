@@ -5,14 +5,15 @@ import styles from './IndexPage.css';
 
 class Dom extends React.Component {
   render() {
+    console.log('111', this.props.worksteps.data);
     return (
       <div className={styles.combined_wrapper}>
-        <WorkStep dispatch={this.props.dispatch} />
+        <WorkStep />
       </div>
     );
   }
 }
 
-Dom.propTypes = {
-};
-export default connect()(Dom);
+export default connect(({ worksteps }) => ({
+  worksteps,
+}))(Dom);

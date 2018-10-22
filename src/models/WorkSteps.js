@@ -1,9 +1,11 @@
 
 export default {
 
-  namespace: 'example',
+  namespace: 'worksteps',
 
-  state: {},
+  state: {
+    data: '我已经连接到models了',
+  },
 
   subscriptions: {
     setup({ dispatch, history }) {  // eslint-disable-line
