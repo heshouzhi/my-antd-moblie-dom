@@ -4,6 +4,7 @@ import IndexPage from './routes/IndexPage';
 import PhotoPage from './routes/PhotoPage';
 import Intorduce from './routes/Intorduce';
 import WorkSteps from './routes/WorkSteps';
+import Map from './routes/Map';
 
 function RouterConfig({ history }) {
   return (
@@ -12,6 +13,7 @@ function RouterConfig({ history }) {
       <Route path="/photo" component={PhotoPage} />
       <Route path="/intorduce" component={Intorduce} />
       <Route path="/work" component={WorkSteps} />
+      <Route path="/map" component={Map} />
     </Router>
   );
 }

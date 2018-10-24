@@ -13,6 +13,7 @@ const app = dva({
 
 // 3. Model
 app.model(require('./models/WorkSteps'));
+app.model(require('./models/Map'));
 
 // 4. Router
 app.router(require('./router'));
