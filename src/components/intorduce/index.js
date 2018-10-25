@@ -18,7 +18,7 @@ class Dom extends React.Component {
   render() {
     return (
       <div className={styles.wrap}>
-        <div className="texty-demo" style={{ marginTop: 64 }}>
+        <div className="texty-demo">
           <Texty className={styles.title}>姓名： 何守志</Texty>
           <Texty className={styles.title}>性别： 男</Texty>
           <Texty className={styles.title}>出生日期： 1993/8/6</Texty>
@@ -38,13 +38,15 @@ class Dom extends React.Component {
           </Texty>
         </div>
         <div className={styles.linkTo}>
-          <Texty
-            className={styles.title}
-            onClick={this.handleClick}
-            style={{ width: 20 }}
-          >
-            点我看下去
-          </Texty>
+          <div style={{ width: 30, display: 'inline-block' }}>
+            <Texty
+              className={styles.title}
+              onClick={this.handleClick}
+              style={{ width: 20 }}
+            >
+              点我看下去
+            </Texty>
+          </div>
         </div>
       </div>
     );

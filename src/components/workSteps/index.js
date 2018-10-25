@@ -67,7 +67,7 @@ class Dom extends React.Component {
       '政府房屋拆迁管理系统，房屋拆迁管理系统数据设置系统，个人独立完成从页面设计和代码完成',
     );
     return (
-      <WingBlank size="lg">
+      <WingBlank size="lg" style={{ overflow: 'auto', height: '100%' }}>
         <WhiteSpace />
         <Steps size="small" current={1}>
           <Step title="2016.03—2018.02" icon={descriptionOne()} description={element1} />
@@ -75,7 +75,7 @@ class Dom extends React.Component {
           <Step title="2018.11—至今" description="期待我能在这里留下贵公司浓墨重彩的一笔" />
         </Steps>
         <WhiteSpace size="lg" />
-        <div id="main" style={{ width: '85.6%', height: 200 }} />
+        <div id="main" style={{ width: '100%', height: 200 }} />
       </WingBlank>
     );
   }

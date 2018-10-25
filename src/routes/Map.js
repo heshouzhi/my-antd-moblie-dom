@@ -33,6 +33,7 @@ class Dom extends React.Component {
     if (this.state.data.lives && this.state.data.lives.length > 0) {
       a = this.state.data.lives[0];
     }
+    const loading = '加载中...';
     return (
       <div style={{ width: '100%', height: '50%' }}>
         <Map
@@ -46,17 +47,17 @@ class Dom extends React.Component {
         <WhiteSpace size="lg" />
         <Card>
           <Card.Header
-            title={`${a.city}天气预报`}
+            title={`${a.city || loading}天气预报`}
             thumb="https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg"
           />
           <Card.Body>
-            <div>日期：{`${a.reporttime}`}</div>
+            <div>日期：{`${a.reporttime || loading}`}</div>
             <WhiteSpace size="lg" />
-            <div>天气：{`${a.weather}`}</div>
+            <div>天气：{`${a.weather || loading}`}</div>
             <WhiteSpace size="lg" />
-            <div>风力：{`${a.windpower}`}</div>
+            <div>风力：{`${a.windpower || loading}`}</div>
             <WhiteSpace size="lg" />
-            <div>湿度：{`${a.humidity}`}</div>
+            <div>湿度：{`${a.humidity || loading}`}</div>
           </Card.Body>
         </Card>
       </div>
