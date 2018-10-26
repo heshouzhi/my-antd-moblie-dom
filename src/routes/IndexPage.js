@@ -4,6 +4,7 @@ import { connect } from 'dva';
 import { routerRedux } from 'dva/router';
 import styles from './IndexPage.css';
 import Morning from '../assets/morning.mp3';
+import Book from '../assets/book.svg';
 // import Test from '../assets/test.svg';
 // import PhotoPage from './PhotoPage';
 
@@ -11,6 +12,11 @@ class IndexPage extends React.Component {
   handleClick = () => {
     this.props.dispatch(routerRedux.push({
       pathname: 'photo',
+    }));
+  };
+  handleBook = () => {
+    this.props.dispatch(routerRedux.push({
+      pathname: 'book',
     }));
   };
   handlePause = () => {
@@ -38,6 +44,13 @@ class IndexPage extends React.Component {
         <Button onClick={this.handlePlay} style={{ color: '#0CA495' }}>播放</Button>
         <WhiteSpace size="lg" />
         <Button onClick={this.handlePause} style={{ color: '#0CA495' }}>暂停</Button>
+        <img
+          src={Book}
+          className={styles.bookAnimation}
+          alt="这是一份说明书"
+          style={{ position: 'fixed', left: 30, bottom: 30 }}
+          onClick={this.handleBook}
+        />
       </div>
     );
   }

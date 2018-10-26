@@ -1,9 +1,12 @@
 import React from 'react';
+import Book from '../components/book';
 
 class Dom extends React.Component {
   render() {
     return (
-      <div>111</div>
+      <div style={{ height: '100%', padding: 20, boxSizing: 'border-box' }}>
+        <Book />
+      </div>
     );
   }
 }

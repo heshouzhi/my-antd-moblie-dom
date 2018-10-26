@@ -27,6 +27,9 @@ class Dom extends React.Component {
   componentDidMount() {
     this.props.dispatch({ type: 'map/getWeather' });
   }
+  handleBack = () => {
+    this.props.history.goBack();
+  };
   render() {
     // const weatherInfo = this.state.data.lives[0];
     let a = '';
@@ -60,6 +63,7 @@ class Dom extends React.Component {
             <div>湿度：{`${a.humidity || loading}`}</div>
           </Card.Body>
         </Card>
+        <h5 style={{ height: 32, lineHeight: '32px', textAlign: 'center', color: '#333' }} onClick={this.handleBack}>返回上一页</h5>
       </div>
     );
   }

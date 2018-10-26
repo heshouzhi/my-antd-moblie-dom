@@ -71,3 +71,18 @@ body{
   box-sizing: border-box;
   position: relative;
 }
+
+
+.bookAnimation{
+  -webkit-animation:pulse 1s .2s infinite  ease both;
+  -moz-animation:pulse 1s .2s infinite  ease both;}
+@-webkit-keyframes pulse{
+  0%{-webkit-transform:scale(1)}
+  50%{-webkit-transform:scale(1.1)}
+  100%{-webkit-transform:scale(1)}
+}
+@-moz-keyframes pulse{
+  0%{-moz-transform:scale(1)}
+  50%{-moz-transform:scale(1.1)}
+  100%{-moz-transform:scale(1)}
+}

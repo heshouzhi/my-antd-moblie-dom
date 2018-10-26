@@ -19,13 +19,13 @@ class Dom extends React.Component {
     return (
       <div className={styles.wrap}>
         <div className="texty-demo">
-          <Texty className={styles.title}>姓名： 何守志</Texty>
+          <Texty className={styles.title}>姓名： XXX</Texty>
           <Texty className={styles.title}>性别： 男</Texty>
           <Texty className={styles.title}>出生日期： 1993/8/6</Texty>
-          <Texty className={styles.title}>手机号： 17621140956</Texty>
-          <Texty className={styles.title}>邮箱： 17621140956@163.com</Texty>
+          <Texty className={styles.title}>手机号： 17621XXX</Texty>
+          <Texty className={styles.title}>邮箱： 1762XXX@163.com</Texty>
           <Texty className={styles.title}>爱好： 比较广泛，尚待发现</Texty>
-          <Texty className={styles.title} onClick={this.handleClickmap}>现居住： 我在这里</Texty>
+          <Texty className={styles.title} onClick={this.handleClickmap}>现居住： 我在这里(点我，点我，点我)</Texty>
           <Texty className={styles.title}>职业： web前端</Texty>
           <Texty className={styles.title}>
             职业技能： 精通JavaScript、Ajax等Web开发技术；
