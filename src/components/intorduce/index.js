@@ -24,7 +24,7 @@ class Dom extends React.Component {
           <Texty className={styles.title}>出生日期： 1993/8/6</Texty>
           <Texty className={styles.title}>手机号： 17621XXX</Texty>
           <Texty className={styles.title}>邮箱： 1762XXX@163.com</Texty>
-          <Texty className={styles.title}>爱好： 比较广泛，尚待发现</Texty>
+          <Texty className={styles.title}>爱好： 比较广泛，爱看国漫、做饭</Texty>
           <Texty className={styles.title} onClick={this.handleClickmap}>现居住： 我在这里(点我，点我，点我)</Texty>
           <Texty className={styles.title}>职业： web前端</Texty>
           <Texty className={styles.title}>
